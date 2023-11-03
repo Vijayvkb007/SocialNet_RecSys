@@ -55,6 +55,12 @@ def FoFs(user : str, Graph : nx.Graph) -> set:
 
 print(FoFs('Aryan', Social))
 
+option = {
+    'node_color': '#ccb3ff',
+    'node_size': 1000,
+    'width': 2,
+}
 
-nx.draw_spring(Social, with_labels=True)
+nx.draw_spring(Social, with_labels=True, **option)
+
 plt.show()
